@@ -48,4 +48,9 @@ onBeforeUnmount(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.svg_class {
+  width: 20rem;
+  display: block;
+}
+</style>
