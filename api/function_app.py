@@ -56,11 +56,13 @@ class SDIXAdapterAgent:
 
 @app.route(route="requestVerifiableCredential")
 def requestVerifiableCredential(req: func.HttpRequest) -> func.HttpResponse:
-    return SDIXAdapterAgent().requestVerifiableCredential()
+    ret =  SDIXAdapterAgent().requestVerifiableCredential()
+    return func.HttpResponse(ret, status_code=200)
 
 
 @app.route(route="getVerifiableCredential")
 def getVerifiableCredential(req: func.HttpRequest) -> func.HttpResponse:
     id_field = 'id'
     id = req.params.get(id_field),
-    return SDIXAdapterAgent().getVerifiableCredential(id)
+    ret = SDIXAdapterAgent().getVerifiableCredential(id)
+    return func.HttpResponse(ret, status_code=200)
