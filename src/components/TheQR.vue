@@ -14,6 +14,7 @@ onMounted(async () => {
   console.log(response)
   if (response.ok) {
     const data = await response.json()
+    console.log(data)
     qrSVG.value = data.qrcode
     id.value = data.id
     url.value = data.url
