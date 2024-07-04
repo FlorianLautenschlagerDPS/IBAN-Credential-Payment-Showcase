@@ -42,7 +42,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div>
-    <div class="svg_class" target="”_blank”">
+    <div class="svg_class" target="_blank">
       <a :href="url" v-html="qrSVG"></a>
     </div>
   </div>
