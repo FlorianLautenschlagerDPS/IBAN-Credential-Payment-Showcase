@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
       </div>
 
       <div>
-        <label for="sum">Referenznummer/Vwerwendungszweck: </label>
+        <label for="sum">Betrag: </label>
         <input
           type="number"
           v-model.number="sum"
